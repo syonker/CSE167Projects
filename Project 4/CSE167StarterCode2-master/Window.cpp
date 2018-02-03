@@ -74,17 +74,17 @@ int pause = 0;
 unsigned int val;
 
 
-#define VERTEX_SHADER_PATH  "C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/CSE167StarterCode2-master/shader.vert"
-#define FRAGMENT_SHADER_PATH "C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/CSE167StarterCode2-master/shader.frag"
+#define VERTEX_SHADER_PATH  "../shader.vert"
+#define FRAGMENT_SHADER_PATH "../shader.frag"
 
-#define SKY_VERTEX_SHADER_PATH  "C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/CSE167StarterCode2-master/skyshader.vert"
-#define SKY_FRAGMENT_SHADER_PATH "C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/CSE167StarterCode2-master/skyshader.frag"
+#define SKY_VERTEX_SHADER_PATH  "../skyshader.vert"
+#define SKY_FRAGMENT_SHADER_PATH "../skyshader.frag"
 
-#define SELECTION_VERTEX_SHADER_PATH  "C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/CSE167StarterCode2-master/selectionshader.vert"
-#define SELECTION_FRAGMENT_SHADER_PATH "C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/CSE167StarterCode2-master/selectionshader.frag"
+#define SELECTION_VERTEX_SHADER_PATH  "../selectionshader.vert"
+#define SELECTION_FRAGMENT_SHADER_PATH "../selectionshader.frag"
 
-#define ENVIRONMENT_VERTEX_SHADER_PATH  "C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/CSE167StarterCode2-master/environmentshader.vert"
-#define ENVIRONMENT_FRAGMENT_SHADER_PATH "C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/CSE167StarterCode2-master/environmentshader.frag"
+#define ENVIRONMENT_VERTEX_SHADER_PATH  "../environmentshader.vert"
+#define ENVIRONMENT_FRAGMENT_SHADER_PATH "../environmentshader.frag"
 
 
 // Default camera parameters
