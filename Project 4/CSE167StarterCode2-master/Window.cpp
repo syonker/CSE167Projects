@@ -139,7 +139,7 @@ void Window::initialize_objects()
 	//bunny->tag = "BUNNY";
 	//glm::mat4 bunnyInitial = glm::mat4(1.0f);
 
-	Geometry * s1 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, environmentshaderProgram, 2);
+	Geometry * s1 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, environmentshaderProgram, 2);
 	s1->tag = "s1";
 	s1->environmentMap = 1;
 	//glm::mat4 s1Initial = glm::translate(glm::mat4(1.0f), {62.6087f, -62.6087f, 0.0f});
@@ -152,7 +152,7 @@ void Window::initialize_objects()
 	coaster = s1;
 
 
-	Geometry * s2 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, environmentshaderProgram, 2);
+	Geometry * s2 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, environmentshaderProgram, 2);
 	s2->tag = "s2";
 	s2->environmentMap = 1;
 	glm::mat4 s2Initial = glm::translate(glm::mat4(1.0f), {62.6087f, -62.6087f, 0.0f });
@@ -189,12 +189,12 @@ void Window::initialize_objects()
 	skybox = new SkyboxObject();	
 
 	faces = {
-		"C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/mars_rt.jpg",
-		"C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/mars_lf.jpg",
-		"C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/mars_up.jpg",
-		"C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/mars_dn.jpg",
-		"C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/mars_bk.jpg",
-		"C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/mars_ft.jpg"
+		"../../mars_rt.jpg",
+		"../../mars_lf.jpg",
+		"../../mars_up.jpg",
+		"../../mars_dn.jpg",
+		"../../mars_bk.jpg",
+		"../../mars_ft.jpg"
 	};
 	
 	cubemapTexture = loadCubemap(faces);

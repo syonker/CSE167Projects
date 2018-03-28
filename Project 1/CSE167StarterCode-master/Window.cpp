@@ -3,9 +3,9 @@
 const char* window_title = "GLFW Starter Project";
 Cube cube(5.0f);
 
-OBJObject bunny("../bunny.obj");
-OBJObject bear("../bear.obj");
-OBJObject dragon("../dragon.obj");
+OBJObject bunny("../../../OBJFiles/bunny.obj");
+OBJObject bear("../../../OBJFiles/bear.obj");
+OBJObject dragon("../../../OBJFiles/dragon.obj");
 
 OBJObject *cObject = &bunny;
 

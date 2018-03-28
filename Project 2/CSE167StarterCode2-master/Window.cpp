@@ -41,9 +41,9 @@ int mouse = 0;
 
 // On some systems you need to change this to the absolute path
 //#define VERTEX_SHADER_PATH "../shader.vert"
-#define VERTEX_SHADER_PATH  "C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 2/CSE167StarterCode2-master/shader.vert"
+#define VERTEX_SHADER_PATH  "../shader.vert"
 //#define FRAGMENT_SHADER_PATH "../shader.frag"
-#define FRAGMENT_SHADER_PATH "C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 2/CSE167StarterCode2-master/shader.frag"
+#define FRAGMENT_SHADER_PATH "../shader.frag"
 
 // Default camera parameters
 glm::vec3 cam_pos(0.0f, 0.0f, 20.0f);		// e  | Position of camera
@@ -60,16 +60,16 @@ void Window::initialize_objects()
 {
 	//cube = new Cube();
 
-	bunny = new OBJObject("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 2/bunny.obj",1);
-	bear = new OBJObject("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 2/bear.obj",2);
-	dragon = new OBJObject("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 2/dragon.obj",3);
+	bunny = new OBJObject("../../../OBJFiles/bunny.obj",1);
+	bear = new OBJObject("../../../OBJFiles/bear.obj",2);
+	dragon = new OBJObject("../../../OBJFiles/dragon.obj",3);
 	cObject = bunny;
 
 	cMovingObject = bunny;
 
-	fakeObject = new OBJObject("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 2/sphere.obj", 4);
-	sphere = new OBJObject("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 2/sphere.obj", 4);
-	cone = new OBJObject("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 2/cone.obj", 4);
+	fakeObject = new OBJObject("../../../OBJFiles/sphere.obj", 4);
+	sphere = new OBJObject("../../../OBJFiles/sphere.obj", 4);
+	cone = new OBJObject("../../../OBJFiles/cone.obj", 4);
 
 	directional = new Light(1);
 	point = new Light(2);

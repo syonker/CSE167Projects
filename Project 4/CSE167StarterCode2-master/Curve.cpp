@@ -149,145 +149,148 @@ Curve::Curve(GLuint shaderProgram, GLuint selectionshaderProgram, GLuint envshad
 	highestT = 0.0f;
 
 	//populate p
-	Geometry * p0 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 0);
+	Geometry * p0 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 0);
 	p0->tag = "p0";
 	p0->interp = 1;
 	glm::mat4 p0Initial = glm::translate(glm::mat4(1.0f), c0);
 
+	
 
-	Geometry * p1 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
+
+	Geometry * p1 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
 	p1->tag = "p1";
 	p1->interp = 0;
 	glm::mat4 p1Initial = glm::translate(glm::mat4(1.0f), c1);
 
 
-	Geometry * p2 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
+
+	Geometry * p2 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
 	p2->tag = "p2";
 	p2->interp = 0;
 	glm::mat4 p2Initial = glm::translate(glm::mat4(1.0f), c2);
 
 
-	Geometry * p3 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 0);
+	Geometry * p3 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 0);
 	p3->tag = "p3";
 	p3->interp = 1;
 	glm::mat4 p3Initial = glm::translate(glm::mat4(1.0f), c3);
 
 
-	Geometry * p4 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
+	Geometry * p4 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
 	p4->tag = "p4";
 	p4->interp = 0;
 	glm::mat4 p4Initial = glm::translate(glm::mat4(1.0f), c4);
 
 
-	Geometry * p5 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
+	Geometry * p5 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
 	p5->tag = "p5";
 	p5->interp = 0;
 	glm::mat4 p5Initial = glm::translate(glm::mat4(1.0f), c5);
 
 
-	Geometry * p6 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 0);
+	Geometry * p6 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 0);
 	p6->tag = "p6";
 	p6->interp = 1;
 	glm::mat4 p6Initial = glm::translate(glm::mat4(1.0f), c6);
 
 
-	Geometry * p7 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
+	Geometry * p7 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
 	p7->tag = "p7";
 	p7->interp = 0;
 	glm::mat4 p7Initial = glm::translate(glm::mat4(1.0f), c7);
 
 
-	Geometry * p8 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
+	Geometry * p8 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
 	p8->tag = "p8";
 	p8->interp = 0;
 	glm::mat4 p8Initial = glm::translate(glm::mat4(1.0f), c8);
 
 
-	Geometry * p9 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 0);
+	Geometry * p9 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 0);
 	p9->tag = "p9";
 	p9->interp = 1;
 	glm::mat4 p9Initial = glm::translate(glm::mat4(1.0f), c9);
 
 
-	Geometry * p10 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
+	Geometry * p10 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
 	p10->tag = "p10";
 	p10->interp = 0;
 	glm::mat4 p10Initial = glm::translate(glm::mat4(1.0f), c10);
 
 
-	Geometry * p11 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
+	Geometry * p11 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
 	p11->tag = "p11";
 	p11->interp = 0;
 	glm::mat4 p11Initial = glm::translate(glm::mat4(1.0f), c11);
 
 
-	Geometry * p12 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 0);
+	Geometry * p12 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 0);
 	p12->tag = "p12";
 	p12->interp = 1;
 	glm::mat4 p12Initial = glm::translate(glm::mat4(1.0f), c12);
 
 
-	Geometry * p13 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
+	Geometry * p13 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
 	p13->tag = "p13";
 	p13->interp = 0;
 	glm::mat4 p13Initial = glm::translate(glm::mat4(1.0f), c13);
 
 
-	Geometry * p14 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
+	Geometry * p14 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
 	p14->tag = "p14";
 	p14->interp = 0;
 	glm::mat4 p14Initial = glm::translate(glm::mat4(1.0f), c14);
 
 
-	Geometry * p15 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 0);
+	Geometry * p15 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 0);
 	p15->tag = "p15";
 	p15->interp = 1;
 	glm::mat4 p15Initial = glm::translate(glm::mat4(1.0f), c15);
 
 
-	Geometry * p16 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
+	Geometry * p16 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
 	p16->tag = "p16";
 	p16->interp = 0;
 	glm::mat4 p16Initial = glm::translate(glm::mat4(1.0f), c16);
 
 
-	Geometry * p17 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
+	Geometry * p17 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
 	p17->tag = "p17";
 	p17->interp = 0;
 	glm::mat4 p17Initial = glm::translate(glm::mat4(1.0f), c17);
 
 
-	Geometry * p18 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 0);
+	Geometry * p18 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 0);
 	p18->tag = "p18";
 	p18->interp = 1;
 	glm::mat4 p18Initial = glm::translate(glm::mat4(1.0f), c18);
 
 
-	Geometry * p19 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
+	Geometry * p19 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
 	p19->tag = "p19";
 	p19->interp = 0;
 	glm::mat4 p19Initial = glm::translate(glm::mat4(1.0f), c19);
 
 
-	Geometry * p20 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
+	Geometry * p20 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
 	p20->tag = "p20";
 	p20->interp = 0;
 	glm::mat4 p20Initial = glm::translate(glm::mat4(1.0f), c20);
 
 
-	Geometry * p21 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 0);
+	Geometry * p21 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 0);
 	p21->tag = "p21";
 	p21->interp = 1;
 	glm::mat4 p21Initial = glm::translate(glm::mat4(1.0f), c21);
 
 
-	Geometry * p22 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
+	Geometry * p22 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
 	p22->tag = "p22";
 	p22->interp = 0;
 	glm::mat4 p22Initial = glm::translate(glm::mat4(1.0f), c22);
 
 
-	Geometry * p23 = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 4/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
+	Geometry * p23 = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, selectionshaderProgram, envshaderProgram, 1);
 	p23->tag = "p23";
 	p23->interp = 0;
 	glm::mat4 p23Initial = glm::translate(glm::mat4(1.0f), c23);
@@ -1205,6 +1208,11 @@ void Curve::update(int pStart) {
 	for (t = 0.0f; t < 1.0f; t += (1.0f/150.0f)) {
 
 
+		if (allPoints.size() == count) {
+			return;
+		}
+
+
 		q = { 0.0f,0.0f,0.0f };
 		
 		/*
@@ -1261,8 +1269,11 @@ void Curve::update(int pStart) {
 		//allPoints[count][2] = q.z;
 		//count++;
 
+		
+
 		if (bufferStuff == 0) {
 
+			
 			allPoints[count] = q;
 
 		}

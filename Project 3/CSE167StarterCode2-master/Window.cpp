@@ -120,13 +120,13 @@ int mouse = 0;
 
 // On some systems you need to change this to the absolute path
 //#define VERTEX_SHADER_PATH "../shader.vert"
-#define VERTEX_SHADER_PATH  "C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 3/CSE167StarterCode2-master/shader.vert"
+#define VERTEX_SHADER_PATH  "../shader.vert"
 //#define FRAGMENT_SHADER_PATH "../shader.frag"
-#define FRAGMENT_SHADER_PATH "C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 3/CSE167StarterCode2-master/shader.frag"
+#define FRAGMENT_SHADER_PATH "../shader.frag"
 
-#define SKY_VERTEX_SHADER_PATH  "C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 3/CSE167StarterCode2-master/skyshader.vert"
+#define SKY_VERTEX_SHADER_PATH  "../skyshader.vert"
 //#define FRAGMENT_SHADER_PATH "../shader.frag"
-#define SKY_FRAGMENT_SHADER_PATH "C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 3/CSE167StarterCode2-master/skyshader.frag"
+#define SKY_FRAGMENT_SHADER_PATH "../skyshader.frag"
 
 
 // Default camera parameters
@@ -163,13 +163,14 @@ void Window::initialize_objects()
 	//dragon = new OBJObject("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 2/dragon.obj",3);
 	//cObject = bunny;
 
-	Geometry * head = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 3/head.obj", shaderProgram, 2);
-	Geometry * larm = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 3/limb.obj", shaderProgram, 1);
-	Geometry * rarm = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 3/limb.obj", shaderProgram, 1);
-	Geometry * body = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 3/body.obj", shaderProgram, 0);
-	Geometry * top = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 3/head.obj", shaderProgram, 1);
-	Geometry * toptop = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 3/head.obj", shaderProgram, 1);
-	Geometry * sphere = new Geometry("C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 3/sphere.obj", shaderProgram, -1);
+
+	Geometry * head = new Geometry("../../../OBJFiles/head.obj", shaderProgram, 2);
+	Geometry * larm = new Geometry("../../../OBJFiles/limb.obj", shaderProgram, 1);
+	Geometry * rarm = new Geometry("../../../OBJFiles/limb.obj", shaderProgram, 1);
+	Geometry * body = new Geometry("../../../OBJFiles/body.obj", shaderProgram, 0);
+	Geometry * top = new Geometry("../../../OBJFiles/head.obj", shaderProgram, 1);
+	Geometry * toptop = new Geometry("../../../OBJFiles/head.obj", shaderProgram, 1);
+	Geometry * sphere = new Geometry("../../../OBJFiles/sphere.obj", shaderProgram, -1);
 
 
 
@@ -315,13 +316,15 @@ void Window::initialize_objects()
 	*/
 
 	faces = {
-		"C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 3/alien_rt.jpg",
-		"C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 3/alien_lf.jpg",
-		"C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 3/alien_up.jpg",
-		"C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 3/alien_dn.jpg",
-		"C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 3/alien_bk.jpg",
-		"C:/Users/sbyon_000/Desktop/SCHOOL BS/CSE 167 (B00)/Project 3/alien_ft.jpg"
+		"../../alien_rt.jpg",
+		"../../alien_lf.jpg",
+		"../../alien_up.jpg",
+		"../../alien_dn.jpg",
+		"../../alien_bk.jpg",
+		"../../alien_ft.jpg",
 	};
+
+	
 	
 	cubemapTexture = loadCubemap(faces);
 	
