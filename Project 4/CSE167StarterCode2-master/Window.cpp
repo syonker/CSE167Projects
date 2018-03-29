@@ -789,8 +789,11 @@ void Window::cursor_position_callback(GLFWwindow* window, double xpos, double yp
 			currY = ypos;
 
 			//possibly change the .08 to have to do with the max/min horz and vertical values  
-			horzDisp = (float)(glm::clamp(currX - prevX, -0.08, 0.08));
-			vertDisp = (float)(glm::clamp(currY - prevY, -0.08, 0.08));
+			//horzDisp = (float)(glm::clamp(currX - prevX, -0.08, 0.08));
+			//vertDisp = (float)(glm::clamp(currY - prevY, -0.08, 0.08));
+
+			horzDisp = (float)(glm::clamp(currX - prevX, -0.2, 0.2));
+			vertDisp = (float)(glm::clamp(currY - prevY, -0.2, 0.2));
 
 			horzVec = glm::normalize(glm::cross(cam_up,(cam_look_at-cam_pos)));
 			vertVec = cam_up;
